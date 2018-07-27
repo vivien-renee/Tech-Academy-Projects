@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> </head>
+		<title>Pizza shop</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="pizza.css">
+		
+		</html>
+	
+		
+
+<body>
+	<center><h1>Pizza Menu</h1></center>
+	
+
+	<!-----------------------Pizza Size Selection-------------------->
+	<div id="size" class="size">
+	<h2>Size</h2>
+		<form>
+		<input type="radio" id="personal" name="size" value="personal"> Personal ($6) <br>
+		<input type="radio" id="medium" name="size" value="medium"> Medium ($10) <br>
+		<input type="radio" id="large" name="size" value="large"> Large ($14) <br>
+		<input type="radio" id="xlarge" name="size" value="xlarge"> Extra Large ($16) <br><br> 
+		</form> 
+	</div>
+	<!-----------------------End Pizza Size Selection----------------->
+	
+
+		
+		
+	<!-----------------------Pizza Crust Selection-------------------->
+	<div id="crust" class="option">
+	<h2>Crust</h2>
+		<form>
+		<input type="radio" name="crust" value="plain"> Plain Personal<br>
+		<input type="radio" name="crust" value="garlic"> Garlic Butter<br>
+		<input type="radio" name="crust" value="cheese"> Cheese Stuffed ($3 extra) <br>
+		<input type="radio" name="crust" value="spicy"> Spicy<br>
+		<input type="radio" name="crust" value="house"> House Special<br><br>		
+		</form> 
+	</div>
+<!-----------------------End Pizza Crust Selection----------------->
+
+<!-----------------------Pizza sauce Selection-------------------->
+	<div id="sauce">
+	<h2>Sauce</h2>
+		<form>
+		<input type="radio" name="sauce" value="marinara"> Maranara<br>
+		<input type="radio" name="sauce" value="white"> White<br>
+		<input type="radio" name="sauce" value="barbeque"> Barbeque<br>
+		<input type="radio" name="sauce" value="nosauce"> No Sauce<br><br>		
+		</form> 
+	</div>
+<!-----------------------End Pizza sauce Selection----------------->
+
+<!-----------------------Pizza cheese Selection-------------------->
+	<div id="cheese">
+	<h2>Cheese</h2>
+		<form>
+		<input type="radio" name="cheese" value="regular"> Regular<br>
+		<input type="radio" name="cheese" value="nocheese"> No Cheese<br>
+		<input type="radio" name="cheese" value="nosauce"> Extra Cheese ($3 extra) <br><br>		
+		</form> 
+	</div>
+<!-----------------------End Pizza cheese Selection----------------->
+
+<!-----------------------Pizza Meat Selection----------------------->
+
+	<div id="meat">
+	<h2>Meat</h2>
+	<h6>(The first one is free, each additional is $1 extra)</h6>
+		<form action="">
+		<input type="checkbox" name="meat" value="pepperoni"> Pepperoni<br>
+		<input type="checkbox" name="meat" value="sausage"> Sausage<br>
+		<input type="checkbox" name="meat" value="bacon"> Canadian Bacon<br>
+		<input type="checkbox" name="meat" value="beef"> Ground Beef<br>
+		<input type="checkbox" name="meat" value="anchovy"> Anchovy<br>
+		<input type="checkbox" name="meat" value="chicken"> Chicken<br><br>
+		</form>
+	</div>
+<!-----------------------Pizza veggie Selection----------------->
+    <div id="veggies">
+	<h2>Veggies</h2>
+	<h6>(The first one is free, each additional is $1 extra)</h6>
+		<form action="">
+		<input type="checkbox" name="veggies" value="pepperoni"> Tomatoes<br>
+		<input type="checkbox" name="veggies" value="onions"> Onions<br>
+		<input type="checkbox" name="veggies" value="olives"> Olives<br>
+		<input type="checkbox" name="veggies" value="peppers"> Green Peppers<br>
+		<input type="checkbox" name="veggies" value="mushrooms"> Mushrooms<br>
+		<input type="checkbox" name="veggies" value="pineapple"> Pineapple<br>
+		<input type="checkbox" name="veggies" value="spinach"> Spinach<br>
+		<input type="checkbox" name="veggies" value="jalapeno"> Jalapeño<br><br>
+		</form>
+	</div>
+<!-----------------------End Pizza veggie Selection----------------->
+	
+	<!---------Order Button------------------------------------------>
+	
+	<button id="order-button" onclick="total()">Place Order</button>
+<p id="textarea">Place Holder text</p>
+
+	<!-----Test spot for total box------>
+	<div id="total">
+	
+
+	<table>
+	<tr><td>Total:</td><td id="totalPrice"</td></tr> 
+	</table>
+
+		<!-----End Test spot for total box------>
+
+	
+	
+	
+<script src="pizza.js"></script>
+</body>
+	
